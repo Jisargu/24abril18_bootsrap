@@ -13,15 +13,14 @@
 </head>
 <body>
     <!--Menú-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Monsters Inc</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand col-sm-6" href="#">Monsters Inc</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+          <ul class="navbar-nav mr-auto justify-content-end">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -31,7 +30,7 @@
                 <a class="nav-link" href="#">Contact</a>
                 </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Create Custumer</a>
+                <a class="nav-link" href="#">Create Customer</a>
                 </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Customer Inquiry</a>
@@ -41,25 +40,71 @@
                 </li>
           </ul>
         </div>
-      </nav>
-      <!--Formulario-->
-      <div class="container">
-            <form>
-                    <div class="form-group row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="inputEmail3" class="col-form-label col-sm-6">Email</label>
-                                    <input type="email" class="form-control col-sm-6" id="inputEmail3" placeholder="Email">
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col">
-                            <label for="inputEmail3" class=" col-form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                        </div>
-                    </div>
-            </form>
-      </div>
+    </nav>
+    <h3 class="col-sm-12">Customer Maintenance</h3>
+    <!--Formulario-->
+    <form class="container fondito_gris_claro">
+        <h5>Customer information</h5>
+        <!--Primer fila-->
+        <div class="form-group row">
+            <!--Columna 1-->
+            <label for="first_name" class="col-sm-2 col-form-label">First name</label>
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="Lena"></div>
+
+            <label for="last_name" class="col-sm-2 col-form-label">Last name</label> 
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="Adkins"></div>
+        
+            <label for="email" class="col-sm-2 col-form-label">Email address</label>
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="ejemplo@algo.org"></div>
+
+            <label for="phone" class="col-sm-2 col-form-label">Phone number</label> 
+            <div class="col-sm-4"><input type="number" class="form-control" placeholder="12345678"></div>
+
+        </div>
+        <h5>Billing address</h5>
+        <!--Segunda fila-->
+        <div class="form-group row">
+            <!--Columna 1-->
+            <label for="address" class="col-sm-2 col-form-label">Address</label>
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="24 nobel street, 7th floor"></div>
+
+            <label for="city" class="col-sm-2 col-form-label">City</label> 
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="Detroit"></div>
+        
+            <label for="region" class="col-sm-2 col-form-label">Region</label>
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="Vermont"></div>
+
+            <label for="postal_code" class="col-sm-2 col-form-label">Postal code</label> 
+            <div class="col-sm-4"><input type="number" class="form-control" placeholder="24573689"></div>
+            
+            <label for="country" class="col-sm-2 col-form-label">Country</label>
+            <div class="col-sm-4"><input type="text" class="form-control" ></div>
+
+        </div>
+        <!--Tercer fila-->
+        <h5>Credit information</h5>
+        <div class="form-group row">
+            <!--Columna 1-->
+            <label for="payment_type" class="col-sm-2 col-form-label">Payment type</label>
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="Master card"></div>
+
+            <label for="credit_card_number" class="col-sm-2 col-form-label">Credit card number</label> 
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="8980799"></div>
+        
+            <label for="credit_limit" class="col-sm-2 col-form-label">Credit limit</label>
+            <div class="col-sm-4"><input type="number" class="form-control" placeholder="0"></div>
+
+            <label for="expiration_date" class="col-sm-2 col-form-label">Expiration date</label> 
+            <div class="col-sm-4"><input type="date" class="form-control"></div>
+            
+            <label for="security_code" class="col-sm-2 col-form-label">Security code</label>
+            <div class="col-sm-4"><input type="text" class="form-control" placeholder="589" ></div>
+
+        </div>
+    <!--Botones edit t create another customer-->
+    <button type="button" class="btn btn-primary">Edit</button>
+    <button type="button" class="btn btn-primary">Create another customer</button>
+    </form>
+    
 </body>
 </html>
